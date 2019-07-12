@@ -43,19 +43,20 @@ header button {
 }
 @media (max-width:991px){
     header button {
-        top: 400px;
+        top: 380px;
         width: 150px !important;
     }
 }
 @media (max-width:771px){
     header button {
-        top: 400px;
-        right: 3%;
-        width: 100px !important;
+        top: 330px;
+        right: 5%;
+        width: 85px !important;
         padding: 0 0 4px 0 !important;
         font-size: 15px !important
     }
 }
+
 /*************************************program-start***********************************/
 .program-start {
     background-image: url('../img/timer_background.png');
@@ -430,8 +431,8 @@ opacity: 1 !important;
    }
    .mybutton a:hover{
    
+    text-decoration: none;
     color: #fff;
-   
    
    }
  .mybutton:hover {
@@ -503,6 +504,11 @@ opacity: 1 !important;
         height: auto !important;
         width: 60px !important;
      }
+     .partenaer .col img {
+        
+        width: auto !important;
+     }
+    
     
      
      

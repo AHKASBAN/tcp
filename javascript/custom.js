@@ -3,7 +3,8 @@
 $(document).ready(function(){
 
   var uperbar = $(".uperbar").innerHeight();
-  var img = $(".img-comp-container img").innerHeight();
+  var img = $(".carousel > div > img").innerHeight();
+
   $("header").innerHeight(uperbar+img);
 
   
@@ -66,7 +67,14 @@ $(document).ready(function(){
       $(".hoverline4").css("opacity","0.33");
     
   });
+
+if (1) {
+  initComparisons();
+}
+
+ 
+
   
-  //$(".slider ").html("<img src='img/Header-03.png'>");
+  $(".img-comp-slider ").html("<img src='img/Header-03.png'>");
 });
 

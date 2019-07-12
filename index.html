@@ -9,9 +9,75 @@
         <link href="css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstraprtl.css" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
-		<link href="css/fontawesome.css" rel="stylesheet">
-		<link href="css/imgslider.css" rel="stylesheet">
-   
+        <link href="css/fontawesome.css" rel="stylesheet">
+        <style>
+            * {
+				box-sizing: border-box;
+				
+            -ms-box-sizing: border-box; 
+            -moz-box-sizing: border-box; 
+            -webkit-box-sizing: border-box; 
+			}
+            
+            .img-comp-container {
+              position: relative;
+              height: 700px; 
+			}
+		
+            .img-comp-img {
+              position: absolute;
+              width: auto;
+              height: auto;
+              overflow:hidden;
+			  
+            }
+            
+            .img-comp-img img {
+              display:block;
+			  height: 700px;
+          
+            }
+		
+            
+            .img-comp-slider {
+              position: absolute;
+              z-index:9;
+              cursor: ew-resize;
+              /*set the appearance of the slider:*/
+              width: 40px;
+              height: 700px;
+              
+            }
+			.img-comp-slider img{
+            
+              width: 40px;
+			  height: 700px;
+			  
+           
+			}
+			@media (max-width:771px){
+				.img-comp-container {
+                   height: 500px; 
+			   }
+			   .img-comp-img img {
+			      height: 500px;
+				}
+				.img-comp-slider {
+            
+              height: 500px;
+              
+            }
+			.img-comp-slider img{
+         
+			  height: 500px;
+			  
+           
+			}
+         
+		}
+		
+            </style>
+          
     </head>
     <body  dir="rtl">
             
@@ -23,24 +89,17 @@
                                     <img  src="img/logo.png" >
                                </a>
                            </div>
-                       </div> 
-                   
-					  
-					  <div class="slider responsive" dir="ltr">
-
-						<div class="left image">
-					  
-						  <img src="img/Header-02.png"/>
-					  
-						</div>
-					  
-						<div class="right image">
-					  
-						  <img src="img/Header-01.png"/>
-					  
-						</div>
-					  
+					   </div>  
+					   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+                       <div class="img-comp-container" dir="ltr">
+                        <div class="img-comp-img active" dir="ltr" >
+                          <img src="img/Header-01.png" width="100%"  dir="ltr" >
+                        </div>
+                        <div class="img-comp-img img-comp-overlay" dir="ltr">
+                          <img src="img/Header-02.png" width="100%"   dir="ltr">
+                        </div>
 					  </div>
+					</div>
                       
                      
 
@@ -263,12 +322,12 @@
                     الإنجليزية</p></div>
           </div>
           <div class="col-md"> <div >
-                <img src="img/condition4-01.png">
+                <img src="img/condition4-01.png" style="width: auto">
           <p>شهادة بكالوريوس
                 فأعلى</p></div>
       </div>
       <div class="col-md"> <div >
-            <img src="img/condition5-01.png">
+            <img src="img/condition5-01.png" style="width: auto">
       <p>غير موظف</p></div>
   </div>
  
@@ -2187,7 +2246,7 @@
          <!--***********explore**************-->
          <div class="explore text-center">
              <h1>رحلة البرنامج على مدى 4 شهور</h1>
-             <button class="mybutton">استكشف الرحلة</button>
+             <button class="mybutton"><a href="pdf/TCP_Journey.pdf" download">استكشف الرحلة</a></button>
          </div>
 
 
@@ -2243,7 +2302,7 @@
              <!--***********certificate2**************-->
            <div class="condition certificate2 text-center" >
             <h1>
-                شهادات مهنية عالمية بدون حضور
+                شهادات مهنية عالمية
             </h1>
             <div class="row" >
                    <div class="col-md"> <div ><div class="img-respn">
@@ -2283,7 +2342,7 @@
                 </h1>
                 <div class="row" >
                        <div class="col-md"> 
-                          <img src="img/partener1-01.png" style="margin-left: 10px">
+                          <img src="img/partener1-01.png" style="margin-left: 10px; width: auto">
                    
                      </div>
                    
@@ -2292,11 +2351,11 @@
                      
                  </div>
                  <div class="col-md"> 
-                        <img src="img/partener3-01.png"  style="width: 140px" >
+                        <img src="img/partener3-01.png"  style="width: 100px; height: 100px" >
                   
               </div>
              <div class="col-md"> 
-                   <img src="img/partener4-01.png" style="width:300px">
+                   <img src="img/partener4-01.png" style="width:auto">
            
          </div>
                 </div>
@@ -2310,7 +2369,7 @@
      
   </div>
   <div class="col-md"> 
-        <img src="img/partener7-01.png" >
+        <img src="img/partener7-01.png" style="width:auto" >
  
 </div>
 <div class="col-md"> 
@@ -2327,7 +2386,7 @@
                     الشريك المنفذ
                 </h1>
                 <div class="row" style="margin-top: 0">
-                    <div class="col-md "> 
+                    <div class="col "> 
                        <img src="img/partener10-01.png" style="width:auto; height: 80px;" >
                     </div>
                 
@@ -2476,13 +2535,12 @@
       
 	   <script src="javascript/jquery.js"></script>
        <script src="javascript/bootstrap.js"></script>
-	   <script src="javascript/bootstraprtl.js"></script>
-	   <script src="javascript/imgslider.js"></script>
+       <script src="javascript/bootstraprtl.js"></script>
       
 
        <script type="text/javascript">
             var countDownDate = new Date("september 1, 2019 00:00:00").getTime();
-            console.log(countDownDate);
+
             var x = setInterval(function() {
                 var now = new Date().getTime();
                 var distance = countDownDate - now;
@@ -2497,21 +2555,86 @@
 	   </script>
 	   
 
-
-	   <script type="text/javascript">
-
-		$('.slider').slider({
-			initialPosition: .5 ,
-
-showInstruction: true ,
-			 instructionText:"" 
-
-			 });
-	  
-	  </script>
+     <script  type="text/javascript">
+            function initComparisons() {
+              var x, i;
+              /*find all elements with an "overlay" class:*/
+              x = document.getElementsByClassName("img-comp-overlay");
+              for (i = 0; i < x.length; i++) {
+                /*once for each "overlay" element:
+                pass the "overlay" element as a parameter when executing the compareImages function:*/
+                compareImages(x[i]);
+              }
+              function compareImages(img) {
+                var slider, img, clicked = 0, w, h;
+                /*get the width and height of the img element*/
+                w = img.offsetWidth;
+                h = img.offsetHeight;
+                /*set the width of the img element to 50%:*/
+                img.style.width = (w / 2) + "px";
+                /*create slider:*/
+                slider = document.createElement("DIV");
+                slider.setAttribute("class", "img-comp-slider");
+                /*insert slider*/
+                img.parentElement.insertBefore(slider, img);
+                /*position the slider in the middle:*/
+                slider.style.top = (h / 2) - (slider.offsetHeight / 2) + "px";
+                slider.style.left = (w / 2) - (slider.offsetWidth / 2) + "px";
+                /*execute a function when the mouse button is pressed:*/
+                slider.addEventListener("mousedown", slideReady);
+                /*and another function when the mouse button is released:*/
+                window.addEventListener("mouseup", slideFinish);
+                /*or touched (for touch screens:*/
+                slider.addEventListener("touchstart", slideReady);
+                /*and released (for touch screens:*/
+                window.addEventListener("touchstop", slideFinish);
+                function slideReady(e) {
+                  /*prevent any other actions that may occur when moving over the image:*/
+                  e.preventDefault();
+                  /*the slider is now clicked and ready to move:*/
+                  clicked = 1;
+                  /*execute a function when the slider is moved:*/
+                  window.addEventListener("mousemove", slideMove);
+                  window.addEventListener("touchmove", slideMove);
+                }
+                function slideFinish() {
+                  /*the slider is no longer clicked:*/
+                  clicked = 0;
+                }
+                function slideMove(e) {
+                  var pos;
+                  /*if the slider is no longer clicked, exit this function:*/
+                  if (clicked == 0) return false;
+                  /*get the cursor's x position:*/
+                  pos = getCursorPos(e)
+                  /*prevent the slider from being positioned outside the image:*/
+                  if (pos < 0) pos = 0;
+                  if (pos > w) pos = w;
+                  /*execute a function that will resize the overlay image according to the cursor:*/
+                  slide(pos);
+                }
+                function getCursorPos(e) {
+                  var a, x = 0;
+                  e = e || window.event;
+                  /*get the x positions of the image:*/
+                  a = img.getBoundingClientRect();
+                  /*calculate the cursor's x coordinate, relative to the image:*/
+                  x = e.pageX - a.left;
+                  /*consider any page scrolling:*/
+                  x = x - window.pageXOffset;
+                  return x;
+                }
+                function slide(x) {
+                  /*resize the image:*/
+                  img.style.width = x + "px";
+                  /*position the slider:*/
+                  slider.style.left = img.offsetWidth - (slider.offsetWidth / 2) + "px";
+                }
+              }
+            }
+			</script>
+			
 		 <script src="javascript/custom.js"></script>
-
-
      
     </body>
 </html>    
