@@ -114,6 +114,31 @@ header button {
         width: 70%;
         margin: auto;
     }
+    .program-start .cyber{
+        
+        padding: 25px;      
+    }
+    .program-start .cyber p:first-of-type ,.program-start .cyber p:nth-of-type(2){
+        font-size: 18px;
+       
+       
+     }
+     .program-start .cyber{
+      
+        font-weight: 600;
+    
+        font-size: 14px;
+
+    
+        
+    }
+    .program-start .cyber p:nth-of-type(3){
+      
+       margin-bottom: 2px !important
+    
+        
+    }
+ 
  
 }
 @media (max-width:991px){
@@ -154,7 +179,10 @@ header button {
 @media (max-width:771px){
     .contain .row:last-of-type{
        
-        margin-top:0 ;
+        margin-top:0  !important;
+    }
+    .contain > h1{
+        margin-bottom:15px ;
     }
 }
 /**********************************************target***************/
@@ -380,12 +408,16 @@ opacity: 1 !important;
     }
     .ring  {
       
-         padding: 25px 0;
+         padding: 10px 0;
       }
       .standards .row{
         width:100% ; 
         margin: 25px 0 0 0 !important;
         
+     
+    }
+    .standards p{
+      margin-top: 5px !important
      
     }
       
@@ -399,11 +431,7 @@ opacity: 1 !important;
         margin-right: 0;
        
     }
-    .standards .row > div{
-        margin: auto;
-        
-       
-    }
+    
 }
 /*****************************************explore*****************/
 .explore {
@@ -535,8 +563,9 @@ footer ul li {
 
 footer ul li p{
     font-size: 16px;
-    margin-top: 15px;
-    margin-left: 20px
+    margin-top: 5px;
+    margin-left: 20px;
+    
     
  }
  @media(max-width:771px) {
@@ -544,8 +573,15 @@ footer ul li p{
          padding-right: 15px;
          
      }
+     footer ul li p{
+        
+        margin-top: 0;
+       
+        
+        
+     }
      footer  {
-        padding: 25px 0;
+        padding: 50px 0;
         
     }
     footer ul li:first-of-type {
