@@ -116,22 +116,15 @@ header button {
     }
     .program-start .cyber{
         
-        padding: 25px;      
+        padding: 30px;   
+        font-size: 14px;   
     }
     .program-start .cyber p:first-of-type ,.program-start .cyber p:nth-of-type(2){
         font-size: 18px;
        
        
      }
-     .program-start .cyber{
-      
-        font-weight: 600;
-    
-        font-size: 14px;
 
-    
-        
-    }
     .program-start .cyber p:nth-of-type(3){
       
        margin-top: 25px !important
