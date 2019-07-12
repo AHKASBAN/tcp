@@ -68,13 +68,10 @@ $(document).ready(function(){
     
   });
 
-if (1) {
-  initComparisons();
-}
 
  
 
   
-  $(".img-comp-slider ").html("<img src='img/Header-03.png'>");
+  $(".handle ").html("<img src='img/Header-03.png'>");
 });
 

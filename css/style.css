@@ -49,7 +49,7 @@ header button {
 }
 @media (max-width:771px){
     header button {
-        top: 330px;
+        top: 380px;
         right: 5%;
         width: 85px !important;
         padding: 0 0 4px 0 !important;
@@ -134,7 +134,7 @@ header button {
     }
     .program-start .cyber p:nth-of-type(3){
       
-       margin-bottom: 2px !important
+       margin-top: 25px !important
     
         
     }
